@@ -14,7 +14,7 @@ Our fine-tuned Verilog models can be found on HuggingFace: [Link](https://huggin
 1. [VeriThoughts](#VeriThoughts)
 2. [Training](#Training)
 3. [Evaluation: VeriThoughts](#evaluation-verithoughts)
-4. [Evaluation: Verilog Eval](#verilog-eval-human)
+4. [Evaluation: Verilog Eval](#evaluation-verilog-eval-human)
 
 ## VeriThoughts
 1. Clone and install the repo.
