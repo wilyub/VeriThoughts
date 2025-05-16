@@ -1,0 +1,3 @@
+vllm
+google-genai
+anthropic
