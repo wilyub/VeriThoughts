@@ -73,3 +73,8 @@ cd VeriThoughts/verilog-eval
 git clone https://github.com/NVlabs/verilog-eval/tree/release/1.0.0
 pip install -e verilog-eval
 ```
+4. Generate benchmark responses:
+```
+python verilog_eval_generate_vllm.py --model_id your/model/id --gpu 0 --bench_type human --hf_token my_hf_token
+```
+5. Follow the steps in Verilog_Eval_Test.ipynb to calculate pass@k.
