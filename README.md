@@ -49,7 +49,10 @@ chmod +x file_name.sh
 ./file_name.sh
 ```
 ## Evaluation: VeriThoughts
-
-
-
+1. Clone and install the repo.
+```
+git clone https://github.com/wilyub/VeriThoughts.git
+cd VeriThoughts/evaluation_verithoughts
+```
+2. 
 ## Evaluation: Verilog Eval Human
