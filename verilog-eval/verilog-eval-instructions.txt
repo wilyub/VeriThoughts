@@ -1,0 +1,2 @@
+git clone https://github.com/NVlabs/verilog-eval/tree/release/1.0.0
+pip install -e verilog-eval
