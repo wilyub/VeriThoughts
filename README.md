@@ -32,9 +32,8 @@ https://yosyshq.readthedocs.io/projects/yosys/en/0.41/getting_started/installati
 python multi-turn-yosys-generation.py --start_idx 0 --end_idx 25090 --label_start 0 --batch_file_path your/file/path --gemini_key your_gemini_key --deepseek_key your_deepseek_key --yosys_location your/yosys/location
 ```
 ## Training
-1. Clone and install the repo.
+1. Go to sub-repo
 ```
-git clone https://github.com/wilyub/VeriThoughts.git
 cd VeriThoughts/training
 ```
 2. Install LlamaFactory by following the instructions:
@@ -49,10 +48,24 @@ chmod +x file_name.sh
 ./file_name.sh
 ```
 ## Evaluation: VeriThoughts
-1. Clone and install the repo.
+1. Go to sub-repo
 ```
-git clone https://github.com/wilyub/VeriThoughts.git
 cd VeriThoughts/evaluation_verithoughts
 ```
-2. 
+2. Download the benchmark data from HuggingFace and store it in VeriThoughts/evaluation_verithoughts.
+3. Install dependencies using the requirements.txt
+4. Generate benchmark responses:
+```
+python verilog_vllm_multi.py --model_id nyu-dice-lab/Qwen-2.5-Instruct-Verilog-Reasoning-7B --sample_number 20 --batch_size 100 --reasoning_mode --hf_read_token your_hf_token --benchmark_path  your_benchmark_path --tensor_parallel_size 4
+```
+4. Evaluate the generated responses.
+```
+python evaluation_script.py --results_path your/generated/jsonl --samples_per_question 20 --yosys_location your/yosys/location
+```
 ## Evaluation: Verilog Eval Human
+1. Go to sub-repo
+```
+cd VeriThoughts/verilog-eval
+```
+2. Install dependencies using the requirements.txt
+3. 
