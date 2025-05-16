@@ -68,4 +68,8 @@ python evaluation_script.py --results_path your/generated/jsonl --samples_per_qu
 cd VeriThoughts/verilog-eval
 ```
 2. Install dependencies using the requirements.txt
-3. 
+3. Install verilog-eval
+```
+git clone https://github.com/NVlabs/verilog-eval/tree/release/1.0.0
+pip install -e verilog-eval
+```
