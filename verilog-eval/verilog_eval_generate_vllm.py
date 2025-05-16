@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 import json
 from huggingface_hub import login
-login(token="hf_XXXXXX")
+
 
 def load_json(filename):
     des_data = []
@@ -35,8 +35,9 @@ parser = argparse.ArgumentParser(description="Arg Parse")
 parser.add_argument("--model_id", type=str, help="HF model name or local path")
 parser.add_argument("--gpu",type=str,help="Which number GPU to use, index from 0")
 parser.add_argument('--bench_type',default="Human", type=str,help="Human by default, can choose Machine")
+parser.add_argument('--hf_token', type=str, help="HF read token")
 args = parser.parse_args()
-
+login(token=args.hf_token)
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu #select a specific GPU in a multi-GPU CUDA Environment
 num_samples_per_task = 20
 batch_size = 20
