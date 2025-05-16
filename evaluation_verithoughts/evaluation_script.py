@@ -133,8 +133,9 @@ parser.add_argument("--samples_per_question", type=int, help="Number of samples 
 parser.add_argument("--old_data", action="store_true", help="Old data format")
 parser.add_argument("--reason_mode", action="store_true", help="Reasoning mode for parsing")
 parser.add_argument("--yosys_location", type=str, help="Absolute path to yosys environment.")
+parser.add_argument("--benchmark_path", type=str, help="Absolute path to the benchmark jsonl")
 args = parser.parse_args()
-benchmark_data = load_jsonl("/scratch/wpy2004/StrictlyVerifiedVerilog/verified_benchmark.jsonl")
+benchmark_data = load_jsonl(args.benchmark_path)
 results_data = load_jsonl(args.results_path)
 yosys_location = args.yosys_location
 
