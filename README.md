@@ -60,7 +60,7 @@ python verilog_vllm_multi.py --model_id nyu-dice-lab/Qwen-2.5-Instruct-Verilog-R
 ```
 4. Evaluate the generated responses.
 ```
-python evaluation_script.py --results_path your/generated/jsonl --samples_per_question 20 --yosys_location your/yosys/location
+python evaluation_script.py --results_path your/generated/jsonl --samples_per_question 20 --yosys_location your/yosys/location --benchmark_path your/benchmark/path
 ```
 ## Evaluation: Verilog Eval Human
 1. Go to sub-repo
