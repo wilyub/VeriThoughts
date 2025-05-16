@@ -1,0 +1,50 @@
+{
+    "reasoning_dataset": {
+        "file_name": "lf_complete_trainset_reasoning.jsonl",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "instruction_dataset": {
+        "file_name": "lf_complete_trainset_instructions.jsonl",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "fail_instruction_gen": {
+        "file_name": "lf_failed_trainset_instructions_gen.jsonl",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "fail_instruction_gt": {
+        "file_name": "lf_failed_trainset_instructions_gt.jsonl",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "fail_reason_gen": {
+        "file_name": "lf_failed_trainset_reasoning_gen.jsonl",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    },
+    "fail_reason_gt": {
+        "file_name": "lf_failed_trainset_reasoning_gt.jsonl",
+        "columns": {
+            "prompt": "instruction",
+            "query": "input",
+            "response": "output"
+        }
+    }
+}
